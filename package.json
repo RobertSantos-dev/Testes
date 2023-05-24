@@ -4,6 +4,8 @@
   "description": "Aplicando testes com jest, praticando os melhores metodos.",
   "main": "index.js",
   "scripts": {
+    "build": "npx -y tsc",
+    "dev": "tsnd ./src/Services/Alunos.ts",
     "test": "jest"
   },
   "repository": {
@@ -18,9 +20,10 @@
   },
   "homepage": "https://github.com/RobertSantos-dev/Testes#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.1",
     "jest": "^29.5.0",
     "ts-jest": "^29.1.0",
-    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   }
 }

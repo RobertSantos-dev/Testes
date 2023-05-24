@@ -1,0 +1,54 @@
+{
+  "alunos": [
+    {
+      "name": "Robert",
+      "subjects": {
+        "portugues": [5.5, 8.0, 7.5, 5.5],
+        "matematica": [6.5, 4.0, 9.0, 8.5],
+        "historia": [8.5, 7.5, 6.5, 10],
+        "geografia": [3.5, 7.5, 9.0, 8.5],
+        "ingles": [7.5, 8.0, 6.5, 5.5]
+      }
+    },
+    {
+      "name": "Gabriel",
+      "subjects": {
+        "portugues": [6.5, 7.0, 7.5, 4.5],
+        "matematica": [7.5, 3.0, 6.0, 4.5],
+        "historia": [10, 7.5, 2.5, 4.5],
+        "geografia": [3.5, 8.5, 5.0, 8.5],
+        "ingles": [4.5, 4.0, 6.5, 8.0]
+      }
+    },
+    {
+      "name": "João",
+      "subjects": {
+        "portugues": [6.5, 8.0, 6.5, 4.5],
+        "matematica": [9.0, 6.0, 6.0, 8.5],
+        "historia": [7.0, 6.5, 5.5, 5.5],
+        "geografia": [6.5, 8.5, 4.0, 7.5],
+        "ingles": [5.5, 3.0, 4.5, 6.0]
+      }
+    },
+    {
+      "name": "Jessica",
+      "subjects": {
+        "portugues": [6.5, 5.0, 8.5, 10.0],
+        "matematica": [6.0, 6.5, 7.0, 7.5],
+        "historia": [4.0, 6.5, 7.5, 5.5],
+        "geografia": [6.0, 8.0, 8.0, 6.5],
+        "ingles": [7.5, 8.0, 8.5, 9.0]
+      }
+    },
+    {
+      "name": "Penélope",
+      "subjects": {
+        "portugues": [7.5, 7.0, 6.0, 8.0],
+        "matematica": [9.0, 9.5, 10.0, 8.5],
+        "historia": [6.0, 5.5, 8.5, 5.0],
+        "geografia": [7.0, 8.0, 9.0, 6.0],
+        "ingles": [6.5, 7.5, 9.5, 8.0]
+      }
+    }
+  ]
+}
