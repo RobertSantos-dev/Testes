@@ -18,6 +18,6 @@ describe('Testes a classe Alunos', () => {
   it('03 - [nameOne] É retornado uma mensagem caso o aluno não exista', () => {
     const instancie = new Alunos();
 
-    expect(instancie.nameOne('Gabriel')).toEqual(alunos[1]);
+    expect(instancie.nameOne('Bob')).toBe('Aluno não foi registrado');
   });
 })

@@ -2,9 +2,16 @@ import { alunos } from '../Json/notas.json';
 import { IAlunos } from '../Interfaces/IAlunos';
 
 export default class Alunos implements IAlunos {
-  private notas;
-  constructor() { this.notas = alunos; }
+  constructor(private notas = alunos) {}
 
-  public names() {}
-  public nameOne(name: string) {}
+  public names() {
+    return this.notas.map(({ name }) => name);
+  }
+
+  public nameOne(name: string) {
+    const result = this.notas.filter((e) => name === e.name);
+    if (result.length === 0) return 'Aluno não foi registrado';
+
+    return result[0];
+  }
 }
