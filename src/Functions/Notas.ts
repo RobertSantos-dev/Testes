@@ -30,6 +30,12 @@ export default class Notas implements INotas {
     ));
   }
 
+  public disciplineApproval(dis: string) {
+    if (!dis) return '';
+
+    return {}
+  }
+
   public finalResultOne(name: string) {
     const student = this.notas.find((e) => e.name === name);
     if (!student) return 'Aluno não registrado';
