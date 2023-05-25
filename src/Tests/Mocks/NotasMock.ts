@@ -5,6 +5,6 @@ export const averageAllMock = [{
     matematica: 7.0,
     historia: 8.1,
     geografia: 7.1,
-    ingles: 6.8
+    ingles: 6.9
   }
 }]
