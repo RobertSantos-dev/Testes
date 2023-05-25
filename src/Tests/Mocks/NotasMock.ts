@@ -6,11 +6,21 @@ export const averageAllMock = [{
   }
 }];
 
-export const finalResultMock = [{
-  name: 'Gabriel',
-  subjects: {
-    portugues: "Aprovado", matematica: "Reprovado", historia: "Aprovado",
-    geografia: "Aprovado", ingles: "Reprovado"
+export const finalResultMock = [
+  {
+    name: "Robert",
+    subjects: {
+      portugues: "Aprovado", matematica: "Aprovado", historia: "Aprovado",
+      geografia: "Aprovado", ingles: "Aprovado"
+    },
+    result: "Aprovado"
   },
-  result: "Reprovado"
-}]
+  {
+    name: 'Gabriel',
+    subjects: {
+      portugues: "Aprovado", matematica: "Reprovado", historia: "Aprovado",
+      geografia: "Aprovado", ingles: "Reprovado"
+    },
+    result: "Reprovado"
+},
+];

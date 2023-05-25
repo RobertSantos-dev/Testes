@@ -40,7 +40,8 @@ describe('Testes da classe Notas', () => {
     it('01 - É retornado um object com os resultados de um aluno', () => {
       const instancie = new Notas();
 
-      expect(instancie.finalResultOne('Gabriel')).toEqual(finalResultMock[0]);
+      expect(instancie.finalResultOne('Robert')).toEqual(finalResultMock[0]);
+      expect(instancie.finalResultOne('Gabriel')).toEqual(finalResultMock[1]);
     });
     it('02 - É retornado uma mensagem caso o aluno não exista', () => {
         const instancie = new Notas();
