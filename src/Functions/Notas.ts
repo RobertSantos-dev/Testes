@@ -19,7 +19,7 @@ export default class Notas implements INotas {
 
     const result = { name: student.name, subjects: {} };
 
-    Object.entries(student.subjects).forEach((e: any) => {
+    Object.entries(student.subjects).forEach((e) => {
       const media = (e[1][0] + e[1][1] + e[1][2] + e[1][3]) / 4;
       result.subjects = {
         ...result.subjects,

@@ -26,8 +26,13 @@ describe('Testes da classe Notas', () => {
   describe('Função [averageOne]', () => {
     it('01 - É retornado um object da media um aluno', () => {
       const instancie = new Notas();
-      instancie.averageOne('Robert');
+
       expect(instancie.averageOne('Robert')).toEqual(averageAllMock[0]);
-    })
-  })
+    });
+    it('02 - É retornado uma mensagem caso o aluno não exista', () => {
+        const instancie = new Notas();
+
+        expect(instancie.averageOne('Bob')).toBe('Aluno não registrado');
+      });
+  });
 });
