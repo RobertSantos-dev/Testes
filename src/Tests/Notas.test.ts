@@ -1,5 +1,5 @@
 import Notas from "../Functions/Notas";
-import { averageAllMock } from "./Mocks/NotasMock";
+import { averageAllMock, finalResultMock } from "./Mocks/NotasMock";
 
 describe('Testes da classe Notas', () => {
   describe('Função [disciplineAssessment]', () => {
@@ -33,6 +33,19 @@ describe('Testes da classe Notas', () => {
         const instancie = new Notas();
 
         expect(instancie.averageOne('Bob')).toBe('Aluno não registrado');
+      });
+  });
+
+  describe('Função [finalResultOne]', () => {
+    it('01 - É retornado um object com os resultados de um aluno', () => {
+      const instancie = new Notas();
+
+      expect(instancie.finalResultOne('Gabriel')).toEqual(finalResultMock[0]);
+    });
+    it('02 - É retornado uma mensagem caso o aluno não exista', () => {
+        const instancie = new Notas();
+
+        expect(instancie.finalResultOne('Bob')).toBe('Aluno não registrado');
       });
   });
 });
