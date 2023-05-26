@@ -1,7 +1,8 @@
 import { alunos } from '../Json/notas.json';
+import { IResults } from '../Interfaces/IResults';
 import Notas from './Notas';
 
-export default class Results {
+export default class Results implements IResults {
   constructor(
     private file = alunos,
     private notas = new Notas
