@@ -1,16 +1,27 @@
 import { alunos } from '../Json/notas.json';
+import Notas from './Notas';
 
 export default class Results {
-  constructor(private notas = alunos) {}
+  constructor(
+    private file = alunos,
+    private notas = new Notas
+  ) {}
 
   public disciplineApproval(dis: string) {
-    if (!dis) return '';
+    const filter = this.notas.disciplineAssessment(dis);
+    if (typeof filter === 'string') return filter;
 
-    return {}
+    const values: string[] = [];
+    filter.forEach((e) => {
+      const media = (e[dis][0] + e[dis][1] + e[dis][2] + e[dis][3]) / 4;
+      if (media >= 6) values.push(e.name);
+    });
+
+    return { [dis]: values };
   }
 
   public finalResultOne(name: string) {
-    const student = this.notas.find((e) => e.name === name);
+    const student = this.file.find((e) => e.name === name);
     if (!student) return 'Aluno não registrado';
 
     const situation = { name, subjects: {}, result: 'Aprovado' };
