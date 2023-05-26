@@ -1,19 +1,13 @@
 import Notas from "../Functions/Notas";
-import { averageAllMock } from "./Mocks/NotasMock";
+import { averageAllMock, disciplineNotes } from "./Mocks/NotasMock";
 
 describe('Testes da classe Notas', () => {
   describe('Função [disciplineAssessment]', () => {
     it('01 - É retornado as notas de uma disciplina', () => {
         const instancie = new Notas();
-        const result = [
-          { name: "Robert", matematica: [6.5, 4.0, 9.0, 8.5] },
-          { name: "Gabriel", matematica: [7.5, 3.0, 6.0, 4.5] },
-          { name: "João", matematica: [9.0, 6.0, 6.0, 8.5] },
-          { name: "Jessica", matematica: [6.0, 6.5, 7.0, 7.5] },
-          { name: "Penélope", matematica: [9.0, 9.5, 10.0, 8.5] }
-        ];
     
-        expect(instancie.disciplineAssessment('matematica')).toEqual(result);
+        expect(instancie.disciplineAssessment('matematica'))
+          .toEqual(disciplineNotes);
       });
       it('02 - É retornado uma mensagem', () => {
         const instancie = new Notas();
