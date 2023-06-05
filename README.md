@@ -11,7 +11,7 @@ Esse é um projeto que buscar adaptar, revisar e estudar **Metodologias** e esta
 
 [Conhecimentos e Ferramentas](#conhecimentos-e-ferramentas)
 
-[Status](#status)
+[Instalação](#instalação)
 
 
 </hr>
@@ -117,5 +117,16 @@ Os `tests unitários` são usados no projeto, e arquivos que contem exemplos de 
 </hr>
 </br>
 
-## Status
-🚨 Ainda em desenvolvimento.
+## Instalação 
+```bash
+# Clone o repositório
+git clone git@github.com:RobertSantos-dev/Testes.git
+
+# Entre no diretório Testes/ e Instale as dependencias
+npm install
+ou
+yarn install
+
+# Caso queira rodar os testes, basta digitar:
+npm test
+```
